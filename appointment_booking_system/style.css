@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(115, 144, 238);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #09f553;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #150df4;
+    border-radius: 4px;
+    text-align: left;
+}
+
+select {
+    width: 100%;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px; 
+}
+
+button {
+    background-color: #3366cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #1a4173;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #e05959;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+th {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #47d574;
+}
+
+tbody td:last-child {
+    display: flex;
+    gap: 8px;
+}
+
+tbody td:last-child button {
+    background-color: #19ad26;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+tbody td:last-child button:hover {
+    background-color: #d14848;
+}
+
+.fixed-buttons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+
+#recordForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px;
+    z-index: 1000;
+    max-height: 70vh;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+}
+
+
+#recordForm .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    background-color: #ff5050;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
